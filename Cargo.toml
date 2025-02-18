@@ -1,0 +1,15 @@
+[package]
+name = "mcp-forge"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+offeryn = { git = "https://github.com/avahowell/offeryn" }
+tokio = { version = "1.0", features = ["full"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+async-trait = "0.1"
+schemars = "0.8"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+foundry_script = { git = "https://github.com/foundry-rs/foundry", package = "forge-script" }
